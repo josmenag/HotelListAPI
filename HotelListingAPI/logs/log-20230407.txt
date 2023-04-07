@@ -1,0 +1,24 @@
+2023-04-07 09:03:21.861 -06:00 [ERR] Failed executing DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Countries" (
+    "Id" int NOT NULL CONSTRAINT "PK_Countries" PRIMARY KEY,
+    "Name" nvarchar(max) NOT NULL,
+    "ShortName" nvarchar(max) NOT NULL
+);
+2023-04-07 09:06:25.419 -06:00 [ERR] Failed executing DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Countries" (
+    "Id" int NOT NULL CONSTRAINT "PK_Countries" PRIMARY KEY,
+    "Name" nvarchar(max) NOT NULL,
+    "ShortName" nvarchar(max) NOT NULL
+);
+2023-04-07 09:17:38.111 -06:00 [ERR] Failed executing DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Countries" (
+    "Id" int NOT NULL CONSTRAINT "PK_Countries" PRIMARY KEY,
+    "Name" nvarchar(max) NOT NULL,
+    "ShortName" nvarchar(max) NOT NULL
+);
+2023-04-07 09:20:40.988 -06:00 [ERR] Failed executing DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Countries" (
+    "Id" int NOT NULL CONSTRAINT "PK_Countries" PRIMARY KEY,
+    "Name" nvarchar(max) NOT NULL,
+    "ShortName" nvarchar(max) NOT NULL
+);

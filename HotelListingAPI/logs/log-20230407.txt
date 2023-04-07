@@ -22,3 +22,13 @@ CREATE TABLE "Countries" (
     "Name" nvarchar(max) NOT NULL,
     "ShortName" nvarchar(max) NOT NULL
 );
+2023-04-07 11:39:11.177 -06:00 [INF] Now listening on: https://localhost:7011
+2023-04-07 11:39:11.239 -06:00 [INF] Now listening on: http://localhost:5256
+2023-04-07 11:39:11.241 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-07 11:39:11.242 -06:00 [INF] Hosting environment: Development
+2023-04-07 11:39:11.242 -06:00 [INF] Content root path: /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI
+2023-04-07 11:39:25.356 -06:00 [INF] HTTP GET /api/Countries responded 200 in 1149.2694 ms
+2023-04-07 11:41:21.882 -06:00 [INF] HTTP POST /api/Countries responded 400 in 51.3071 ms
+2023-04-07 11:41:51.681 -06:00 [INF] HTTP POST /api/Countries responded 400 in 6.4658 ms
+2023-04-07 11:42:13.628 -06:00 [INF] HTTP POST /api/Countries responded 400 in 1.3598 ms
+2023-04-07 11:43:10.573 -06:00 [INF] HTTP POST /api/Countries responded 400 in 32.5999 ms

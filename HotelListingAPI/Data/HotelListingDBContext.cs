@@ -13,7 +13,7 @@ namespace HotelListingAPI.Data
 
 		}
 
-		public DbSet<Hotel> Hotels { get; set; }
+		public DbSet<Car> Cars { get; set; }
 		public DbSet<Country> Countries { get; set; }
 
 
@@ -22,7 +22,7 @@ namespace HotelListingAPI.Data
 			base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfiguration(new RoleConfiguration());
             modelBuilder.ApplyConfiguration(new CountryConfiguration());
-            modelBuilder.ApplyConfiguration(new HotelConfiguration());
+            modelBuilder.ApplyConfiguration(new CarConfiguration());
 
 
             modelBuilder.Entity<Country>()
@@ -31,11 +31,11 @@ namespace HotelListingAPI.Data
             modelBuilder.Entity<Country>()
                 .Property(e => e.ShortName)
                 .HasMaxLength(50); // Set the maximum length of the property to 50 characters
-            modelBuilder.Entity<Hotel>()
-                .Property(e => e.Name)
+            modelBuilder.Entity<Car>()
+                .Property(e => e.Make)
                 .HasMaxLength(100); // Set the maximum length of the property to 100 characters
-            modelBuilder.Entity<Hotel>()
-                .Property(e => e.Address)
+            modelBuilder.Entity<Car>()
+                .Property(e => e.Plate)
                 .HasMaxLength(50); // Set the maximum length of the property to 50 characters
         }
 	}

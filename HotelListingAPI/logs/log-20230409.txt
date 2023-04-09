@@ -70,3 +70,168 @@
 2023-04-09 14:58:22.528 -06:00 [INF] HTTP POST /api/Countries responded 201 in 1486.3363 ms
 2023-04-09 14:58:27.647 -06:00 [INF] HTTP GET /api/countries responded 200 in 237.2810 ms
 2023-04-09 14:58:31.464 -06:00 [INF] HTTP GET /api/hotels responded 200 in 50.7124 ms
+2023-04-09 15:01:21.921 -06:00 [INF] Now listening on: https://localhost:7011
+2023-04-09 15:01:21.957 -06:00 [INF] Now listening on: http://localhost:5256
+2023-04-09 15:01:21.958 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-09 15:01:21.959 -06:00 [INF] Hosting environment: Development
+2023-04-09 15:01:21.959 -06:00 [INF] Content root path: /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI
+2023-04-09 15:01:30.101 -06:00 [INF] HTTP POST /api/Account/login responded 200 in 1670.1768 ms
+2023-04-09 15:01:33.776 -06:00 [INF] HTTP GET /api/hotels responded 200 in 104.6222 ms
+2023-04-09 15:01:38.108 -06:00 [INF] HTTP GET /api/hotels/1 responded 200 in 36.0340 ms
+2023-04-09 15:02:08.085 -06:00 [INF] HTTP GET /api/hotels responded 200 in 3.5957 ms
+2023-04-09 15:02:37.876 -06:00 [INF] HTTP GET /api/hotels/1 responded 200 in 55.1781 ms
+2023-04-09 15:03:06.374 -06:00 [INF] HTTP GET /api/hotels responded 200 in 1.2742 ms
+2023-04-09 15:04:19.093 -06:00 [INF] HTTP GET /api/hotels/1 responded 200 in 7.0495 ms
+2023-04-09 15:04:24.224 -06:00 [INF] HTTP GET /api/hotels/2 responded 200 in 1.6116 ms
+2023-04-09 15:04:46.208 -06:00 [INF] HTTP GET /api/hotels/2 responded 200 in 1.9038 ms
+2023-04-09 15:07:15.493 -06:00 [INF] HTTP GET /api/countries responded 200 in 61.3978 ms
+2023-04-09 15:07:25.145 -06:00 [INF] HTTP POST /api/hotels responded 201 in 157.4782 ms
+2023-04-09 15:07:32.806 -06:00 [INF] HTTP GET /api/hotels responded 200 in 0.9713 ms
+2023-04-09 15:09:40.602 -06:00 [INF] HTTP PUT /api/hotels/5 responded 400 in 12.0434 ms
+2023-04-09 15:10:12.821 -06:00 [INF] HTTP PUT /api/hotels/5 responded 400 in 3.0914 ms
+2023-04-09 15:10:19.875 -06:00 [INF] HTTP PUT /api/hotels/3 responded 204 in 13.2804 ms
+2023-04-09 15:10:24.383 -06:00 [INF] HTTP GET /api/hotels responded 200 in 1.0626 ms
+2023-04-09 15:11:26.641 -06:00 [INF] HTTP DELETE /api/hotels/3 responded 204 in 44.3226 ms
+2023-04-09 15:11:29.633 -06:00 [INF] HTTP GET /api/hotels responded 200 in 0.9648 ms
+2023-04-09 15:12:24.282 -06:00 [INF] HTTP GET /api/countries/1 responded 200 in 100.3399 ms
+2023-04-09 15:12:53.184 -06:00 [INF] HTTP GET /api/countries/4 responded 200 in 2.5588 ms
+2023-04-09 15:14:02.923 -06:00 [INF] HTTP GET /api/countries responded 200 in 53.6620 ms
+2023-04-09 15:14:54.008 -06:00 [INF] HTTP PUT /api/countries/4 responded 204 in 18.8621 ms
+2023-04-09 15:14:58.018 -06:00 [INF] HTTP GET /api/countries responded 200 in 1.3246 ms
+2023-04-09 15:45:30.830 -06:00 [INF] Now listening on: https://localhost:7011
+2023-04-09 15:45:30.869 -06:00 [INF] Now listening on: http://localhost:5256
+2023-04-09 15:45:30.871 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-09 15:45:30.871 -06:00 [INF] Hosting environment: Development
+2023-04-09 15:45:30.871 -06:00 [INF] Content root path: /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI
+2023-04-09 15:45:39.043 -06:00 [ERR] Failed executing DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."CountryId", "c"."Make", "c"."Plate", "c"."Year"
+FROM "Cars" AS "c"
+2023-04-09 15:45:39.097 -06:00 [ERR] An exception occurred while iterating over the results of a query for context type 'HotelListingAPI.Data.HotelListingDBContext'.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Cars'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Cars'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2023-04-09 15:45:39.241 -06:00 [ERR] HTTP GET /api/Cars responded 500 in 1480.9603 ms
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Cars'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at HotelListingAPI.Repository.GenericRepository`1.GetAllAsync() in /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI/Repository/GenericRepository.cs:line 39
+   at HotelListingAPI.Controllers.CarsController.GetCars() in /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI/Controllers/CarsController.cs:line 34
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2023-04-09 15:45:39.262 -06:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 1: 'no such table: Cars'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteCommand.PrepareAndEnumerateStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteCommand.GetStatements(Stopwatch timer)+MoveNext()
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at HotelListingAPI.Repository.GenericRepository`1.GetAllAsync() in /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI/Repository/GenericRepository.cs:line 39
+   at HotelListingAPI.Controllers.CarsController.GetCars() in /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI/Controllers/CarsController.cs:line 34
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-04-09 15:55:31.232 -06:00 [ERR] Failed executing DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetRoles" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_AspNetRoles" PRIMARY KEY,
+    "Name" TEXT NULL,
+    "NormalizedName" TEXT NULL,
+    "ConcurrencyStamp" TEXT NULL
+);
+2023-04-09 15:56:25.060 -06:00 [INF] Now listening on: https://localhost:7011
+2023-04-09 15:56:25.123 -06:00 [INF] Now listening on: http://localhost:5256
+2023-04-09 15:56:25.125 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-09 15:56:25.125 -06:00 [INF] Hosting environment: Development
+2023-04-09 15:56:25.125 -06:00 [INF] Content root path: /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI
+2023-04-09 15:56:33.112 -06:00 [INF] HTTP GET /api/Cars responded 200 in 1289.9585 ms
+2023-04-09 16:01:41.703 -06:00 [INF] Now listening on: https://localhost:7011
+2023-04-09 16:01:41.731 -06:00 [INF] Now listening on: http://localhost:5256
+2023-04-09 16:01:41.732 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-09 16:01:41.732 -06:00 [INF] Hosting environment: Development
+2023-04-09 16:01:41.732 -06:00 [INF] Content root path: /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI
+2023-04-09 16:01:48.436 -06:00 [INF] HTTP POST /api/Account/login responded 401 in 1359.7170 ms
+2023-04-09 16:02:10.418 -06:00 [INF] HTTP POST /api/Account/register responded 400 in 19.4348 ms
+2023-04-09 16:02:32.544 -06:00 [INF] HTTP POST /api/Account/register responded 200 in 412.7788 ms
+2023-04-09 16:02:42.738 -06:00 [INF] HTTP POST /api/Account/login responded 200 in 273.0313 ms
+2023-04-09 16:02:53.028 -06:00 [INF] HTTP GET /api/cars responded 200 in 33.2843 ms
+2023-04-09 16:03:02.709 -06:00 [INF] HTTP GET /api/cars/2 responded 200 in 16.0231 ms
+2023-04-09 16:04:03.948 -06:00 [INF] HTTP POST /api/cars responded 201 in 107.2630 ms
+2023-04-09 16:04:08.807 -06:00 [INF] HTTP GET /api/cars responded 200 in 1.6919 ms
+2023-04-09 16:04:11.074 -06:00 [INF] HTTP GET /api/cars responded 200 in 1.0756 ms
+2023-04-09 16:04:19.805 -06:00 [INF] HTTP GET /api/cars/2 responded 200 in 2.0383 ms
+2023-04-09 16:04:32.697 -06:00 [INF] HTTP GET /api/cars/4 responded 200 in 1.5672 ms
+2023-04-09 16:04:42.347 -06:00 [INF] HTTP GET /api/cars/4 responded 200 in 1.8201 ms
+2023-04-09 16:04:52.509 -06:00 [INF] HTTP GET /api/cars responded 200 in 1.3766 ms
+2023-04-09 16:05:28.253 -06:00 [INF] HTTP GET /api/cars/1 responded 200 in 6.1761 ms
+2023-04-09 16:06:39.265 -06:00 [INF] HTTP PUT /api/cars/1 responded 204 in 17.0121 ms
+2023-04-09 16:06:44.159 -06:00 [INF] HTTP GET /api/cars responded 200 in 1.2300 ms
+2023-04-09 16:07:25.336 -06:00 [INF] HTTP DELETE /api/hotels/4 responded 404 in 0.1649 ms
+2023-04-09 16:07:33.753 -06:00 [INF] HTTP DELETE /api/cars/4 responded 204 in 15.4581 ms
+2023-04-09 16:07:38.013 -06:00 [INF] HTTP GET /api/cars responded 200 in 1.0233 ms

@@ -5,34 +5,34 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace HotelListingAPI.Data.Configurations
 {
-    public class HotelConfiguration : IEntityTypeConfiguration<Hotel>
+    public class CarConfiguration : IEntityTypeConfiguration<Car>
     {
-        public void Configure(EntityTypeBuilder<Hotel> builder)
+        public void Configure(EntityTypeBuilder<Car> builder)
         {
             builder.HasData(
-                    new Hotel
+                    new Car
                     {
                         Id = 1,
-                        Name = "Sandals Resort and Spa",
-                        Address = "Negril",
+                        Make = "BMW",
+                        Plate = "F45T",
                         CountryId = 1,
-                        Rating = 4.5
+                        Year = 2020
                     },
-                    new Hotel
+                    new Car
                     {
                         Id = 2,
-                        Name = "Comfort Suites",
-                        Address = "George Town",
+                        Make = "Mercedes-Benz",
+                        Plate = "KOOL-1",
                         CountryId = 3,
-                        Rating = 4.3
+                        Year = 2023
                     },
-                    new Hotel
+                    new Car
                     {
                         Id = 3,
-                        Name = "Grand Palldium",
-                        Address = "Nassua",
+                        Make = "Lamborghini",
+                        Plate = "D14BL0",
                         CountryId = 2,
-                        Rating = 4
+                        Year = 2021
                     }
                 );
         }

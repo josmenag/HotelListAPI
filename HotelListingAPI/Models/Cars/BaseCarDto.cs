@@ -2,13 +2,13 @@
 
 namespace HotelListingAPI.Models.Hotels
 {
-    public abstract class BaseHotelDto
+    public abstract class BaseCarDto
     {
         [Required]
-        public string Name { get; set; }
+        public string Make { get; set; }
         [Required]
-        public string Address { get; set; }
-        public double? Rating { get; set; } // ? = not required
+        public string Plate { get; set; }
+        public int Year { get; set; }
         [Required]
         [Range(1, int.MaxValue)]
         public int CountryId { get; set; }

@@ -89,6 +89,61 @@ namespace HotelListingAPI.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
+            modelBuilder.Entity("HotelListingAPI.Data.Car", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("CountryId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Make")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Plate")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Year")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CountryId");
+
+                    b.ToTable("Cars");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CountryId = 1,
+                            Make = "BMW",
+                            Plate = "F45T",
+                            Year = 2020
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CountryId = 3,
+                            Make = "Mercedes-Benz",
+                            Plate = "KOOL-1",
+                            Year = 2023
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CountryId = 2,
+                            Make = "Lamborghini",
+                            Plate = "D14BL0",
+                            Year = 2021
+                        });
+                });
+
             modelBuilder.Entity("HotelListingAPI.Data.Country", b =>
                 {
                     b.Property<int>("Id")
@@ -130,61 +185,6 @@ namespace HotelListingAPI.Migrations
                         });
                 });
 
-            modelBuilder.Entity("HotelListingAPI.Data.Hotel", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("Address")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("CountryId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("TEXT");
-
-                    b.Property<double>("Rating")
-                        .HasColumnType("REAL");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CountryId");
-
-                    b.ToTable("Hotels");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Address = "Negril",
-                            CountryId = 1,
-                            Name = "Sandals Resort and Spa",
-                            Rating = 4.5
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Address = "George Town",
-                            CountryId = 3,
-                            Name = "Comfort Suites",
-                            Rating = 4.2999999999999998
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Address = "Nassua",
-                            CountryId = 2,
-                            Name = "Grand Palldium",
-                            Rating = 4.0
-                        });
-                });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -213,13 +213,13 @@ namespace HotelListingAPI.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "ee413132-2f28-4a30-b449-c48ad84d0d21",
+                            Id = "0cc698bb-b006-4816-af3e-42fba721528d",
                             Name = "Administrator",
                             NormalizedName = "ADMINISTRATOR"
                         },
                         new
                         {
-                            Id = "cf8cdff1-7788-4f7b-8e76-3a9dfbb714c1",
+                            Id = "cbc08e0b-47e8-46b6-a8d1-76ada23b795b",
                             Name = "User",
                             NormalizedName = "USER"
                         });
@@ -327,10 +327,10 @@ namespace HotelListingAPI.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("HotelListingAPI.Data.Hotel", b =>
+            modelBuilder.Entity("HotelListingAPI.Data.Car", b =>
                 {
                     b.HasOne("HotelListingAPI.Data.Country", "Country")
-                        .WithMany("Hotels")
+                        .WithMany("Cars")
                         .HasForeignKey("CountryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -391,7 +391,7 @@ namespace HotelListingAPI.Migrations
 
             modelBuilder.Entity("HotelListingAPI.Data.Country", b =>
                 {
-                    b.Navigation("Hotels");
+                    b.Navigation("Cars");
                 });
 #pragma warning restore 612, 618
         }

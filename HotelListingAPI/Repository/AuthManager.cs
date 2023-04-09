@@ -26,7 +26,6 @@ namespace HotelListingAPI.Repository
             this._configuration = configuration;
         }
 
-
         public async Task<AuthResponseDto> Login(LoginDto loginDto)
         {
             var user = await _userManager.FindByEmailAsync(loginDto.Email);

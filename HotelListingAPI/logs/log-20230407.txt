@@ -32,3 +32,306 @@ CREATE TABLE "Countries" (
 2023-04-07 11:41:51.681 -06:00 [INF] HTTP POST /api/Countries responded 400 in 6.4658 ms
 2023-04-07 11:42:13.628 -06:00 [INF] HTTP POST /api/Countries responded 400 in 1.3598 ms
 2023-04-07 11:43:10.573 -06:00 [INF] HTTP POST /api/Countries responded 400 in 32.5999 ms
+2023-04-07 13:39:45.636 -06:00 [INF] Now listening on: https://localhost:7011
+2023-04-07 13:39:45.674 -06:00 [INF] Now listening on: http://localhost:5256
+2023-04-07 13:39:45.676 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-07 13:39:45.676 -06:00 [INF] Hosting environment: Development
+2023-04-07 13:39:45.676 -06:00 [INF] Content root path: /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI
+2023-04-07 13:40:10.340 -06:00 [INF] HTTP POST /api/Countries responded 201 in 1137.5743 ms
+2023-04-07 13:40:22.878 -06:00 [INF] HTTP GET /api/Countries responded 200 in 231.7719 ms
+2023-04-07 14:17:58.266 -06:00 [INF] Now listening on: https://localhost:7011
+2023-04-07 14:17:58.304 -06:00 [INF] Now listening on: http://localhost:5256
+2023-04-07 14:17:58.306 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-07 14:17:58.306 -06:00 [INF] Hosting environment: Development
+2023-04-07 14:17:58.307 -06:00 [INF] Content root path: /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI
+2023-04-07 14:18:40.984 -06:00 [INF] HTTP GET /api/Countries/1 responded 200 in 1564.2076 ms
+2023-04-07 14:18:49.232 -06:00 [INF] HTTP GET /api/Countries/4 responded 200 in 30.3076 ms
+2023-04-07 14:18:58.438 -06:00 [INF] HTTP GET /api/Countries responded 200 in 93.6240 ms
+2023-04-07 15:07:58.326 -06:00 [INF] Now listening on: https://localhost:7011
+2023-04-07 15:07:58.372 -06:00 [INF] Now listening on: http://localhost:5256
+2023-04-07 15:07:58.374 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-07 15:07:58.375 -06:00 [INF] Hosting environment: Development
+2023-04-07 15:07:58.375 -06:00 [INF] Content root path: /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI
+2023-04-07 15:08:20.229 -06:00 [INF] HTTP GET /api/Countries responded 200 in 1467.4007 ms
+2023-04-07 15:08:41.851 -06:00 [INF] HTTP GET /api/Countries/4 responded 200 in 267.5133 ms
+2023-04-07 15:09:07.506 -06:00 [INF] HTTP POST /api/Countries responded 201 in 231.3550 ms
+2023-04-07 15:09:15.557 -06:00 [INF] HTTP GET /api/Countries responded 200 in 2.2052 ms
+2023-04-07 15:09:40.447 -06:00 [INF] HTTP PUT /api/Countries/4 responded 400 in 14.4144 ms
+2023-04-07 17:52:42.045 -06:00 [INF] Now listening on: https://localhost:7011
+2023-04-07 17:52:42.085 -06:00 [INF] Now listening on: http://localhost:5256
+2023-04-07 17:52:42.087 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-07 17:52:42.088 -06:00 [INF] Hosting environment: Development
+2023-04-07 17:52:42.088 -06:00 [INF] Content root path: /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI
+2023-04-07 17:52:50.818 -06:00 [ERR] HTTP GET /api/Countries responded 500 in 456.2767 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HotelListingAPI.Controllers.CountriesController.GetCountries() in /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI/Controllers/CountriesController.cs:line 32
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2023-04-07 17:52:50.874 -06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HotelListingAPI.Controllers.CountriesController.GetCountries() in /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI/Controllers/CountriesController.cs:line 32
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-04-07 17:54:25.947 -06:00 [ERR] HTTP GET /api/Countries/1 responded 500 in 66.2759 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HotelListingAPI.Controllers.CountriesController.GetCountry(Int32 id) in /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI/Controllers/CountriesController.cs:line 46
+   at lambda_method16(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2023-04-07 17:54:25.949 -06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HotelListingAPI.Controllers.CountriesController.GetCountry(Int32 id) in /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI/Controllers/CountriesController.cs:line 46
+   at lambda_method16(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-04-07 17:56:15.595 -06:00 [INF] Now listening on: https://localhost:7011
+2023-04-07 17:56:15.630 -06:00 [INF] Now listening on: http://localhost:5256
+2023-04-07 17:56:15.632 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-07 17:56:15.633 -06:00 [INF] Hosting environment: Development
+2023-04-07 17:56:15.633 -06:00 [INF] Content root path: /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI
+2023-04-07 17:56:43.578 -06:00 [ERR] HTTP GET /api/Countries responded 500 in 378.9489 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HotelListingAPI.Controllers.CountriesController.GetCountries() in /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI/Controllers/CountriesController.cs:line 32
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2023-04-07 17:56:43.630 -06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HotelListingAPI.Controllers.CountriesController.GetCountries() in /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI/Controllers/CountriesController.cs:line 32
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-04-07 17:59:29.628 -06:00 [INF] Now listening on: https://localhost:7011
+2023-04-07 17:59:29.665 -06:00 [INF] Now listening on: http://localhost:5256
+2023-04-07 17:59:29.667 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-07 17:59:29.667 -06:00 [INF] Hosting environment: Development
+2023-04-07 17:59:29.668 -06:00 [INF] Content root path: /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI
+2023-04-07 17:59:36.525 -06:00 [INF] HTTP GET /api/Countries responded 200 in 1295.1172 ms
+2023-04-07 17:59:55.568 -06:00 [INF] HTTP POST /api/Countries responded 201 in 257.8788 ms
+2023-04-07 18:00:07.891 -06:00 [INF] HTTP GET /api/Countries/6 responded 200 in 195.2032 ms
+2023-04-07 18:00:35.972 -06:00 [INF] HTTP PUT /api/Countries/6 responded 400 in 14.1831 ms
+2023-04-07 18:00:52.142 -06:00 [INF] HTTP DELETE /api/Countries/6 responded 204 in 39.4791 ms
+2023-04-07 18:01:01.140 -06:00 [INF] HTTP GET /api/Countries responded 200 in 2.0774 ms
+2023-04-07 18:01:16.361 -06:00 [INF] HTTP POST /api/Countries responded 201 in 5.9560 ms
+2023-04-07 18:01:21.222 -06:00 [INF] HTTP GET /api/Countries responded 200 in 1.1953 ms
+2023-04-07 18:09:15.344 -06:00 [INF] Now listening on: https://localhost:7011
+2023-04-07 18:09:15.381 -06:00 [INF] Now listening on: http://localhost:5256
+2023-04-07 18:09:15.383 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-07 18:09:15.383 -06:00 [INF] Hosting environment: Development
+2023-04-07 18:09:15.383 -06:00 [INF] Content root path: /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI
+2023-04-07 18:10:53.598 -06:00 [INF] Now listening on: https://localhost:7011
+2023-04-07 18:10:53.636 -06:00 [INF] Now listening on: http://localhost:5256
+2023-04-07 18:10:53.638 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-07 18:10:53.638 -06:00 [INF] Hosting environment: Development
+2023-04-07 18:10:53.638 -06:00 [INF] Content root path: /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI
+2023-04-07 18:11:24.010 -06:00 [INF] HTTP PUT /api/Countries/1 responded 400 in 317.9934 ms
+2023-04-07 18:11:34.727 -06:00 [INF] HTTP PUT /api/Countries/1 responded 204 in 1057.9616 ms
+2023-04-07 18:11:48.149 -06:00 [INF] HTTP GET /api/Countries responded 200 in 85.2195 ms
+2023-04-07 18:57:49.453 -06:00 [INF] Now listening on: https://localhost:7011
+2023-04-07 18:57:49.520 -06:00 [INF] Now listening on: http://localhost:5256
+2023-04-07 18:57:49.522 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-07 18:57:49.523 -06:00 [INF] Hosting environment: Development
+2023-04-07 18:57:49.523 -06:00 [INF] Content root path: /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI
+2023-04-07 19:29:38.696 -06:00 [INF] Now listening on: https://localhost:7011
+2023-04-07 19:29:38.736 -06:00 [INF] Now listening on: http://localhost:5256
+2023-04-07 19:29:38.738 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-07 19:29:38.739 -06:00 [INF] Hosting environment: Development
+2023-04-07 19:29:38.739 -06:00 [INF] Content root path: /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI
+2023-04-07 19:29:53.365 -06:00 [INF] HTTP GET /api/Hotels responded 200 in 1340.5684 ms
+2023-04-07 19:30:37.060 -06:00 [ERR] HTTP POST /api/Hotels responded 500 in 161.2390 ms
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CreateHotelDto -> Hotel
+HotelListingAPI.Models.Hotels.CreateHotelDto -> HotelListingAPI.Data.Hotel
+   at lambda_method72(Closure, Object, Hotel, ResolutionContext)
+   at HotelListingAPI.Controllers.HotelsController.PostHotel(CreateHotelDto hotelDto) in /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI/Controllers/HotelsController.cs:line 95
+   at lambda_method67(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2023-04-07 19:30:37.108 -06:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CreateHotelDto -> Hotel
+HotelListingAPI.Models.Hotels.CreateHotelDto -> HotelListingAPI.Data.Hotel
+   at lambda_method72(Closure, Object, Hotel, ResolutionContext)
+   at HotelListingAPI.Controllers.HotelsController.PostHotel(CreateHotelDto hotelDto) in /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI/Controllers/HotelsController.cs:line 95
+   at lambda_method67(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-04-07 19:30:51.013 -06:00 [ERR] HTTP POST /api/Hotels responded 500 in 44.3128 ms
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CreateHotelDto -> Hotel
+HotelListingAPI.Models.Hotels.CreateHotelDto -> HotelListingAPI.Data.Hotel
+   at lambda_method72(Closure, Object, Hotel, ResolutionContext)
+   at HotelListingAPI.Controllers.HotelsController.PostHotel(CreateHotelDto hotelDto) in /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI/Controllers/HotelsController.cs:line 95
+   at lambda_method67(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2023-04-07 19:30:51.014 -06:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CreateHotelDto -> Hotel
+HotelListingAPI.Models.Hotels.CreateHotelDto -> HotelListingAPI.Data.Hotel
+   at lambda_method72(Closure, Object, Hotel, ResolutionContext)
+   at HotelListingAPI.Controllers.HotelsController.PostHotel(CreateHotelDto hotelDto) in /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI/Controllers/HotelsController.cs:line 95
+   at lambda_method67(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-04-07 19:32:15.912 -06:00 [INF] Now listening on: https://localhost:7011
+2023-04-07 19:32:15.947 -06:00 [INF] Now listening on: http://localhost:5256
+2023-04-07 19:32:15.949 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-07 19:32:15.949 -06:00 [INF] Hosting environment: Development
+2023-04-07 19:32:15.950 -06:00 [INF] Content root path: /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI
+2023-04-07 19:32:35.600 -06:00 [INF] HTTP GET /api/Hotels responded 200 in 1302.8257 ms
+2023-04-07 19:32:47.364 -06:00 [INF] HTTP GET /api/Hotels/1 responded 200 in 191.3316 ms
+2023-04-07 19:34:27.107 -06:00 [INF] HTTP GET /api/hotels responded 200 in 18.4128 ms
+2023-04-07 19:34:38.467 -06:00 [INF] HTTP GET /api/hotels/1 responded 200 in 6.0743 ms
+2023-04-07 19:35:55.832 -06:00 [INF] HTTP POST /api/hotels responded 201 in 206.3467 ms
+2023-04-07 19:36:16.144 -06:00 [INF] HTTP GET /api/hotels responded 200 in 4.5673 ms
+2023-04-07 19:36:31.983 -06:00 [INF] HTTP DELETE /api/hotels/4 responded 204 in 23.7748 ms
+2023-04-07 19:36:42.076 -06:00 [INF] HTTP GET /api/hotels/4 responded 404 in 3.5799 ms
+2023-04-07 19:36:45.935 -06:00 [INF] HTTP GET /api/hotels/ responded 200 in 1.1456 ms
+2023-04-07 19:37:29.157 -06:00 [INF] HTTP PUT /api/hotels/2 responded 204 in 21.6140 ms
+2023-04-07 19:37:45.137 -06:00 [INF] HTTP GET /api/hotels responded 200 in 0.9373 ms
+2023-04-07 20:11:18.829 -06:00 [INF] Now listening on: https://localhost:7011
+2023-04-07 20:11:18.874 -06:00 [INF] Now listening on: http://localhost:5256
+2023-04-07 20:11:18.876 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-07 20:11:18.876 -06:00 [INF] Hosting environment: Development
+2023-04-07 20:11:18.877 -06:00 [INF] Content root path: /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI

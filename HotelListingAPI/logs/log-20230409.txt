@@ -1,0 +1,72 @@
+2023-04-09 14:03:15.929 -06:00 [INF] Now listening on: https://localhost:7011
+2023-04-09 14:03:15.960 -06:00 [INF] Now listening on: http://localhost:5256
+2023-04-09 14:03:15.961 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-09 14:03:15.961 -06:00 [INF] Hosting environment: Development
+2023-04-09 14:03:15.961 -06:00 [INF] Content root path: /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI
+2023-04-09 14:03:59.325 -06:00 [INF] Now listening on: https://localhost:7011
+2023-04-09 14:03:59.366 -06:00 [INF] Now listening on: http://localhost:5256
+2023-04-09 14:03:59.368 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-09 14:03:59.368 -06:00 [INF] Hosting environment: Development
+2023-04-09 14:03:59.368 -06:00 [INF] Content root path: /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI
+2023-04-09 14:36:50.650 -06:00 [INF] Now listening on: https://localhost:7011
+2023-04-09 14:36:50.688 -06:00 [INF] Now listening on: http://localhost:5256
+2023-04-09 14:36:50.690 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-09 14:36:50.690 -06:00 [INF] Hosting environment: Development
+2023-04-09 14:36:50.690 -06:00 [INF] Content root path: /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI
+2023-04-09 14:37:04.203 -06:00 [INF] HTTP POST /api/Account/login responded 200 in 2150.9849 ms
+2023-04-09 14:37:26.424 -06:00 [INF] HTTP GET /api/countries responded 401 in 13.4505 ms
+2023-04-09 14:37:41.016 -06:00 [INF] HTTP GET /api/countries responded 401 in 45.1275 ms
+2023-04-09 14:37:53.331 -06:00 [INF] HTTP POST /api/Account/login responded 200 in 128.8265 ms
+2023-04-09 14:38:08.750 -06:00 [INF] HTTP GET /api/countries responded 401 in 1.6352 ms
+2023-04-09 14:38:21.371 -06:00 [INF] HTTP POST /api/Account/login responded 200 in 92.0505 ms
+2023-04-09 14:38:32.505 -06:00 [INF] HTTP GET /api/countries responded 401 in 0.5742 ms
+2023-04-09 14:38:57.592 -06:00 [INF] HTTP POST /api/Account/login responded 401 in 2.7347 ms
+2023-04-09 14:39:26.942 -06:00 [INF] Now listening on: https://localhost:7011
+2023-04-09 14:39:26.976 -06:00 [INF] Now listening on: http://localhost:5256
+2023-04-09 14:39:26.978 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-09 14:39:26.978 -06:00 [INF] Hosting environment: Development
+2023-04-09 14:39:26.978 -06:00 [INF] Content root path: /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI
+2023-04-09 14:40:48.834 -06:00 [INF] HTTP GET /api/countries responded 200 in 1547.8807 ms
+2023-04-09 14:40:54.761 -06:00 [INF] HTTP POST /api/Account/login responded 200 in 364.5961 ms
+2023-04-09 14:41:25.610 -06:00 [INF] Now listening on: https://localhost:7011
+2023-04-09 14:41:25.641 -06:00 [INF] Now listening on: http://localhost:5256
+2023-04-09 14:41:25.642 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-09 14:41:25.642 -06:00 [INF] Hosting environment: Development
+2023-04-09 14:41:25.642 -06:00 [INF] Content root path: /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI
+2023-04-09 14:41:36.084 -06:00 [INF] HTTP POST /api/Account/login responded 200 in 1793.5329 ms
+2023-04-09 14:41:51.021 -06:00 [INF] HTTP GET /api/countries responded 401 in 53.5863 ms
+2023-04-09 14:42:29.601 -06:00 [INF] Now listening on: https://localhost:7011
+2023-04-09 14:42:29.633 -06:00 [INF] Now listening on: http://localhost:5256
+2023-04-09 14:42:29.635 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-09 14:42:29.635 -06:00 [INF] Hosting environment: Development
+2023-04-09 14:42:29.635 -06:00 [INF] Content root path: /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI
+2023-04-09 14:42:58.413 -06:00 [INF] HTTP GET /api/countries responded 200 in 1463.6050 ms
+2023-04-09 14:43:38.262 -06:00 [INF] HTTP POST /api/Account/login responded 200 in 359.7381 ms
+2023-04-09 14:47:59.800 -06:00 [INF] HTTP GET /api/countries responded 200 in 16.5728 ms
+2023-04-09 14:48:12.406 -06:00 [INF] HTTP DELETE /api/Countries/8 responded 204 in 116.4813 ms
+2023-04-09 14:48:37.278 -06:00 [INF] HTTP POST /api/api/Account/login responded 404 in 0.1380 ms
+2023-04-09 14:48:50.384 -06:00 [INF] HTTP POST /api/Account/login responded 200 in 77.2121 ms
+2023-04-09 14:49:01.813 -06:00 [INF] HTTP GET /api/hotels responded 200 in 30.6170 ms
+2023-04-09 14:49:11.858 -06:00 [INF] HTTP GET /api/hotels responded 200 in 1.8505 ms
+2023-04-09 14:51:44.359 -06:00 [INF] Now listening on: https://localhost:7011
+2023-04-09 14:51:44.400 -06:00 [INF] Now listening on: http://localhost:5256
+2023-04-09 14:51:44.401 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-09 14:51:44.401 -06:00 [INF] Hosting environment: Development
+2023-04-09 14:51:44.401 -06:00 [INF] Content root path: /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI
+2023-04-09 14:52:02.949 -06:00 [INF] HTTP POST /api/Account/login responded 200 in 1777.0267 ms
+2023-04-09 14:52:30.776 -06:00 [INF] HTTP POST /api/Account/login responded 200 in 137.8399 ms
+2023-04-09 14:52:43.191 -06:00 [INF] HTTP GET /api/countries responded 200 in 50.0690 ms
+2023-04-09 14:53:01.194 -06:00 [INF] HTTP GET /api/countries responded 200 in 39.2873 ms
+2023-04-09 14:53:23.220 -06:00 [INF] HTTP POST /api/api/Countries responded 404 in 2.2722 ms
+2023-04-09 14:53:34.265 -06:00 [INF] HTTP POST /api/Countries responded 401 in 12.4256 ms
+2023-04-09 14:54:16.284 -06:00 [INF] HTTP POST /api/Account/register responded 200 in 291.2024 ms
+2023-04-09 14:54:36.582 -06:00 [INF] HTTP POST /api/Account/login responded 200 in 77.7249 ms
+2023-04-09 14:54:51.465 -06:00 [INF] HTTP POST /api/Countries responded 401 in 2.8336 ms
+2023-04-09 14:58:06.052 -06:00 [INF] Now listening on: https://localhost:7011
+2023-04-09 14:58:06.089 -06:00 [INF] Now listening on: http://localhost:5256
+2023-04-09 14:58:06.090 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-09 14:58:06.090 -06:00 [INF] Hosting environment: Development
+2023-04-09 14:58:06.090 -06:00 [INF] Content root path: /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI
+2023-04-09 14:58:22.528 -06:00 [INF] HTTP POST /api/Countries responded 201 in 1486.3363 ms
+2023-04-09 14:58:27.647 -06:00 [INF] HTTP GET /api/countries responded 200 in 237.2810 ms
+2023-04-09 14:58:31.464 -06:00 [INF] HTTP GET /api/hotels responded 200 in 50.7124 ms

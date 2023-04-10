@@ -55,17 +55,17 @@ namespace HotelListingAPI.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Countries",
+                name: "Dealerships",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Name = table.Column<string>(type: "TEXT", maxLength: 50, nullable: false),
-                    ShortName = table.Column<string>(type: "TEXT", maxLength: 50, nullable: false)
+                    Address = table.Column<string>(type: "TEXT", maxLength: 50, nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Countries", x => x.Id);
+                    table.PrimaryKey("PK_Dealerships", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -183,15 +183,15 @@ namespace HotelListingAPI.Migrations
                     Make = table.Column<string>(type: "TEXT", maxLength: 100, nullable: false),
                     Plate = table.Column<string>(type: "TEXT", maxLength: 50, nullable: false),
                     Year = table.Column<int>(type: "INTEGER", nullable: false),
-                    CountryId = table.Column<int>(type: "INTEGER", nullable: false)
+                    DealershipId = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Cars", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Cars_Countries_CountryId",
-                        column: x => x.CountryId,
-                        principalTable: "Countries",
+                        name: "FK_Cars_Dealerships_DealershipId",
+                        column: x => x.DealershipId,
+                        principalTable: "Dealerships",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -201,23 +201,23 @@ namespace HotelListingAPI.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "0cc698bb-b006-4816-af3e-42fba721528d", null, "Administrator", "ADMINISTRATOR" },
-                    { "cbc08e0b-47e8-46b6-a8d1-76ada23b795b", null, "User", "USER" }
+                    { "4f5c9f94-d671-4efe-b3ad-2f77f1fd32c8", null, "Administrator", "ADMINISTRATOR" },
+                    { "53c85287-a111-47b5-af51-5a42199e39fe", null, "User", "USER" }
                 });
 
             migrationBuilder.InsertData(
-                table: "Countries",
-                columns: new[] { "Id", "Name", "ShortName" },
+                table: "Dealerships",
+                columns: new[] { "Id", "Address", "Name" },
                 values: new object[,]
                 {
-                    { 1, "Jamaica", "JM" },
-                    { 2, "Bahamas", "BS" },
-                    { 3, "Cayman Island", "CI" }
+                    { 1, "Sabana Norte", "San Jose" },
+                    { 2, "Paseo de las Flores", "Heredia" },
+                    { 3, "Jaco", "Puntarenas" }
                 });
 
             migrationBuilder.InsertData(
                 table: "Cars",
-                columns: new[] { "Id", "CountryId", "Make", "Plate", "Year" },
+                columns: new[] { "Id", "DealershipId", "Make", "Plate", "Year" },
                 values: new object[,]
                 {
                     { 1, 1, "BMW", "F45T", 2020 },
@@ -263,9 +263,9 @@ namespace HotelListingAPI.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_Cars_CountryId",
+                name: "IX_Cars_DealershipId",
                 table: "Cars",
-                column: "CountryId");
+                column: "DealershipId");
         }
 
         /// <inheritdoc />
@@ -296,7 +296,7 @@ namespace HotelListingAPI.Migrations
                 name: "AspNetUsers");
 
             migrationBuilder.DropTable(
-                name: "Countries");
+                name: "Dealerships");
         }
     }
 }

@@ -14,22 +14,22 @@ namespace HotelListingAPI.Data
 		}
 
 		public DbSet<Car> Cars { get; set; }
-		public DbSet<Country> Countries { get; set; }
+		public DbSet<Dealership> Dealerships { get; set; }
 
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
 			base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfiguration(new RoleConfiguration());
-            modelBuilder.ApplyConfiguration(new CountryConfiguration());
+            modelBuilder.ApplyConfiguration(new DealershipConfiguration());
             modelBuilder.ApplyConfiguration(new CarConfiguration());
 
 
-            modelBuilder.Entity<Country>()
+            modelBuilder.Entity<Dealership>()
 				.Property(e => e.Name)
 				.HasMaxLength(50); // Set the maximum length of the property to 50 characters
-            modelBuilder.Entity<Country>()
-                .Property(e => e.ShortName)
+            modelBuilder.Entity<Dealership>()
+                .Property(e => e.Address)
                 .HasMaxLength(50); // Set the maximum length of the property to 50 characters
             modelBuilder.Entity<Car>()
                 .Property(e => e.Make)

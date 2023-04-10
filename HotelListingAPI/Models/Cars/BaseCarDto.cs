@@ -11,7 +11,7 @@ namespace HotelListingAPI.Models.Hotels
         public int Year { get; set; }
         [Required]
         [Range(1, int.MaxValue)]
-        public int CountryId { get; set; }
+        public int DealershipId { get; set; }
     }
 }
 

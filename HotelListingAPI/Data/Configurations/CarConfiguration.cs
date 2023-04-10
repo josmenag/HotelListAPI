@@ -15,7 +15,7 @@ namespace HotelListingAPI.Data.Configurations
                         Id = 1,
                         Make = "BMW",
                         Plate = "F45T",
-                        CountryId = 1,
+                        DealershipId = 1,
                         Year = 2020
                     },
                     new Car
@@ -23,7 +23,7 @@ namespace HotelListingAPI.Data.Configurations
                         Id = 2,
                         Make = "Mercedes-Benz",
                         Plate = "KOOL-1",
-                        CountryId = 3,
+                        DealershipId = 3,
                         Year = 2023
                     },
                     new Car
@@ -31,7 +31,7 @@ namespace HotelListingAPI.Data.Configurations
                         Id = 3,
                         Make = "Lamborghini",
                         Plate = "D14BL0",
-                        CountryId = 2,
+                        DealershipId = 2,
                         Year = 2021
                     }
                 );

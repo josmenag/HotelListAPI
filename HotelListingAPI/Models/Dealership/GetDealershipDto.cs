@@ -3,8 +3,8 @@ using System.Diagnostics.Contracts;
 
 namespace HotelListingAPI.Models.Country
 {
-    public class GetCountryDto : BaseCountryDto
-	{
+    public class GetDealershipDto : BaseDealershipDto
+    {
         public int Id { get; set; }        
     }
 }

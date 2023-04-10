@@ -3,7 +3,7 @@ using Microsoft.Identity.Client;
 
 namespace HotelListingAPI.Models.Country
 {
-	public class UpdateCountryDto : BaseCountryDto
+	public class UpdateDealershipDto : BaseDealershipDto
     {
         public int Id { get; set; }
     }

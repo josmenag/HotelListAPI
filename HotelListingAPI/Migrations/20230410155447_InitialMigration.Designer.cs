@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HotelListingAPI.Migrations
 {
     [DbContext(typeof(HotelListingDBContext))]
-    [Migration("20230409215507_InitialMigration")]
+    [Migration("20230410155447_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -98,7 +98,7 @@ namespace HotelListingAPI.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("CountryId")
+                    b.Property<int>("DealershipId")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Make")
@@ -116,7 +116,7 @@ namespace HotelListingAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CountryId");
+                    b.HasIndex("DealershipId");
 
                     b.ToTable("Cars");
 
@@ -124,7 +124,7 @@ namespace HotelListingAPI.Migrations
                         new
                         {
                             Id = 1,
-                            CountryId = 1,
+                            DealershipId = 1,
                             Make = "BMW",
                             Plate = "F45T",
                             Year = 2020
@@ -132,7 +132,7 @@ namespace HotelListingAPI.Migrations
                         new
                         {
                             Id = 2,
-                            CountryId = 3,
+                            DealershipId = 3,
                             Make = "Mercedes-Benz",
                             Plate = "KOOL-1",
                             Year = 2023
@@ -140,51 +140,51 @@ namespace HotelListingAPI.Migrations
                         new
                         {
                             Id = 3,
-                            CountryId = 2,
+                            DealershipId = 2,
                             Make = "Lamborghini",
                             Plate = "D14BL0",
                             Year = 2021
                         });
                 });
 
-            modelBuilder.Entity("HotelListingAPI.Data.Country", b =>
+            modelBuilder.Entity("HotelListingAPI.Data.Dealership", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("ShortName")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("TEXT");
-
                     b.HasKey("Id");
 
-                    b.ToTable("Countries");
+                    b.ToTable("Dealerships");
 
                     b.HasData(
                         new
                         {
                             Id = 1,
-                            Name = "Jamaica",
-                            ShortName = "JM"
+                            Address = "Sabana Norte",
+                            Name = "San Jose"
                         },
                         new
                         {
                             Id = 2,
-                            Name = "Bahamas",
-                            ShortName = "BS"
+                            Address = "Paseo de las Flores",
+                            Name = "Heredia"
                         },
                         new
                         {
                             Id = 3,
-                            Name = "Cayman Island",
-                            ShortName = "CI"
+                            Address = "Jaco",
+                            Name = "Puntarenas"
                         });
                 });
 
@@ -216,13 +216,13 @@ namespace HotelListingAPI.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "0cc698bb-b006-4816-af3e-42fba721528d",
+                            Id = "4f5c9f94-d671-4efe-b3ad-2f77f1fd32c8",
                             Name = "Administrator",
                             NormalizedName = "ADMINISTRATOR"
                         },
                         new
                         {
-                            Id = "cbc08e0b-47e8-46b6-a8d1-76ada23b795b",
+                            Id = "53c85287-a111-47b5-af51-5a42199e39fe",
                             Name = "User",
                             NormalizedName = "USER"
                         });
@@ -332,13 +332,13 @@ namespace HotelListingAPI.Migrations
 
             modelBuilder.Entity("HotelListingAPI.Data.Car", b =>
                 {
-                    b.HasOne("HotelListingAPI.Data.Country", "Country")
+                    b.HasOne("HotelListingAPI.Data.Dealership", "dealership")
                         .WithMany("Cars")
-                        .HasForeignKey("CountryId")
+                        .HasForeignKey("DealershipId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Country");
+                    b.Navigation("dealership");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -392,7 +392,7 @@ namespace HotelListingAPI.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("HotelListingAPI.Data.Country", b =>
+            modelBuilder.Entity("HotelListingAPI.Data.Dealership", b =>
                 {
                     b.Navigation("Cars");
                 });

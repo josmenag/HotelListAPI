@@ -5,18 +5,18 @@ using Microsoft.EntityFrameworkCore;
 
 namespace HotelListingAPI.Repository
 {
-	public class CountriesRepository : GenericRepository<Country>, ICountriesRepository
-	{
+	public class DealershipsRepository : GenericRepository<Dealership>, IDealershipsRepository
+    {
         private readonly HotelListingDBContext _context;
 
-        public CountriesRepository(HotelListingDBContext context) : base(context)
+        public DealershipsRepository(HotelListingDBContext context) : base(context)
 		{
             this._context = context;
 		}
 
-        public async Task<Country> GetDetails(int id)
+        public async Task<Dealership> GetDetails(int id)
         {
-            return await _context.Countries.Include(q => q.Cars)
+            return await _context.Dealerships.Include(q => q.Cars)
                 .FirstOrDefaultAsync(q => q.Id == id);
         }
     }

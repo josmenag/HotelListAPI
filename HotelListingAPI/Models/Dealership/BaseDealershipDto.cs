@@ -3,12 +3,12 @@ using Microsoft.Build.Framework;
 
 namespace HotelListingAPI.Models.Country
 {
-	public class BaseCountryDto
-	{
+	public class BaseDealershipDto
+    {
         [Required]
         public string Name { get; set; }
 
-        public string ShortName { get; set; }
+        public string Address { get; set; }
     }
 }
 

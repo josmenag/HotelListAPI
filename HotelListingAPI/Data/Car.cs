@@ -9,8 +9,8 @@ namespace HotelListingAPI.Data
 		public string Make { get; set; }
 		public string Plate { get; set; }
 		public int Year { get; set; }
-		[ForeignKey(nameof(CountryId))]
-		public int CountryId { get; set; }
-		public Country Country { get; set; }
+		[ForeignKey(nameof(DealershipId))]
+		public int DealershipId { get; set; }
+		public Dealership dealership { get; set; }
 	}
 }

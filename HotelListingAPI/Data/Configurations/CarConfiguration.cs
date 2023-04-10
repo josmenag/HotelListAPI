@@ -14,25 +14,25 @@ namespace HotelListingAPI.Data.Configurations
                     {
                         Id = 1,
                         Make = "BMW",
-                        Plate = "F45T",
+                        Model = "5 series",
                         DealershipId = 1,
-                        Year = 2020
+                        Vin = "F45T"
                     },
                     new Car
                     {
                         Id = 2,
                         Make = "Mercedes-Benz",
-                        Plate = "KOOL-1",
+                        Model = "S-Class",
                         DealershipId = 3,
-                        Year = 2023
+                        Vin = "K00L-13"
                     },
                     new Car
                     {
                         Id = 3,
                         Make = "Lamborghini",
-                        Plate = "D14BL0",
+                        Model = "Veneno",
                         DealershipId = 2,
-                        Year = 2021
+                        Vin = "D14BL0"
                     }
                 );
         }

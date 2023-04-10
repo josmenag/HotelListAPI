@@ -181,8 +181,8 @@ namespace CarsInventoryAPI.Migrations
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Make = table.Column<string>(type: "TEXT", maxLength: 100, nullable: false),
-                    Plate = table.Column<string>(type: "TEXT", maxLength: 50, nullable: false),
-                    Year = table.Column<int>(type: "INTEGER", nullable: false),
+                    Model = table.Column<string>(type: "TEXT", maxLength: 50, nullable: false),
+                    Vin = table.Column<string>(type: "TEXT", maxLength: 50, nullable: false),
                     DealershipId = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
@@ -201,8 +201,8 @@ namespace CarsInventoryAPI.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "543be195-5b4b-40c6-bc5e-b5e33f46d108", null, "Administrator", "ADMINISTRATOR" },
-                    { "65c2a2b6-7157-4d5c-ae5b-21bc4dce8705", null, "User", "USER" }
+                    { "d7ee42db-7ccb-4d46-b4c2-0ce4102350a6", null, "User", "USER" },
+                    { "ee576f16-370d-42f1-8a2b-6a982d30bbff", null, "Administrator", "ADMINISTRATOR" }
                 });
 
             migrationBuilder.InsertData(
@@ -217,12 +217,12 @@ namespace CarsInventoryAPI.Migrations
 
             migrationBuilder.InsertData(
                 table: "Cars",
-                columns: new[] { "Id", "DealershipId", "Make", "Plate", "Year" },
+                columns: new[] { "Id", "DealershipId", "Make", "Model", "Vin" },
                 values: new object[,]
                 {
-                    { 1, 1, "BMW", "F45T", 2020 },
-                    { 2, 3, "Mercedes-Benz", "KOOL-1", 2023 },
-                    { 3, 2, "Lamborghini", "D14BL0", 2021 }
+                    { 1, 1, "BMW", "5 series", "F45T" },
+                    { 2, 3, "Mercedes-Benz", "S-Class", "K00L-13" },
+                    { 3, 2, "Lamborghini", "Veneno", "D14BL0" }
                 });
 
             migrationBuilder.CreateIndex(

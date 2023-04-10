@@ -7,11 +7,10 @@ namespace HotelListingAPI.Models.Hotels
         [Required]
         public string Make { get; set; }
         [Required]
-        public string Plate { get; set; }
-        public int Year { get; set; }
+        public string Model { get; set; }
+        public string vin { get; set; }
         [Required]
         [Range(1, int.MaxValue)]
         public int DealershipId { get; set; }
     }
 }
-

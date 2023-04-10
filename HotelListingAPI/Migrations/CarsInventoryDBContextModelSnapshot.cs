@@ -103,13 +103,15 @@ namespace CarsInventoryAPI.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Plate")
+                    b.Property<string>("Model")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("Year")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("Vin")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
@@ -123,24 +125,24 @@ namespace CarsInventoryAPI.Migrations
                             Id = 1,
                             DealershipId = 1,
                             Make = "BMW",
-                            Plate = "F45T",
-                            Year = 2020
+                            Model = "5 series",
+                            Vin = "F45T"
                         },
                         new
                         {
                             Id = 2,
                             DealershipId = 3,
                             Make = "Mercedes-Benz",
-                            Plate = "KOOL-1",
-                            Year = 2023
+                            Model = "S-Class",
+                            Vin = "K00L-13"
                         },
                         new
                         {
                             Id = 3,
                             DealershipId = 2,
                             Make = "Lamborghini",
-                            Plate = "D14BL0",
-                            Year = 2021
+                            Model = "Veneno",
+                            Vin = "D14BL0"
                         });
                 });
 
@@ -213,13 +215,13 @@ namespace CarsInventoryAPI.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "543be195-5b4b-40c6-bc5e-b5e33f46d108",
+                            Id = "ee576f16-370d-42f1-8a2b-6a982d30bbff",
                             Name = "Administrator",
                             NormalizedName = "ADMINISTRATOR"
                         },
                         new
                         {
-                            Id = "65c2a2b6-7157-4d5c-ae5b-21bc4dce8705",
+                            Id = "d7ee42db-7ccb-4d46-b4c2-0ce4102350a6",
                             Name = "User",
                             NormalizedName = "USER"
                         });

@@ -35,7 +35,10 @@ namespace HotelListingAPI.Data
                 .Property(e => e.Make)
                 .HasMaxLength(100); // Set the maximum length of the property to 100 characters
             modelBuilder.Entity<Car>()
-                .Property(e => e.Plate)
+                .Property(e => e.Model)
+                .HasMaxLength(50); // Set the maximum length of the property to 50 characters
+            modelBuilder.Entity<Car>()
+                .Property(e => e.Vin)
                 .HasMaxLength(50); // Set the maximum length of the property to 50 characters
         }
 	}

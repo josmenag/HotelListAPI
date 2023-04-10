@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
 
-namespace HotelListingAPI.Migrations
+namespace CarsInventoryAPI.Migrations
 {
     /// <inheritdoc />
     public partial class InitialMigration : Migration
@@ -201,8 +201,8 @@ namespace HotelListingAPI.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "4f5c9f94-d671-4efe-b3ad-2f77f1fd32c8", null, "Administrator", "ADMINISTRATOR" },
-                    { "53c85287-a111-47b5-af51-5a42199e39fe", null, "User", "USER" }
+                    { "543be195-5b4b-40c6-bc5e-b5e33f46d108", null, "Administrator", "ADMINISTRATOR" },
+                    { "65c2a2b6-7157-4d5c-ae5b-21bc4dce8705", null, "User", "USER" }
                 });
 
             migrationBuilder.InsertData(

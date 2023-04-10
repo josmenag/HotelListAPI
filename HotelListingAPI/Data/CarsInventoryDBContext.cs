@@ -6,9 +6,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace HotelListingAPI.Data
 {
-	public class HotelListingDBContext : IdentityDbContext<ApiUser>
+	public class CarsInventoryDBContext : IdentityDbContext<ApiUser>
 	{
-		public HotelListingDBContext(DbContextOptions options) : base(options)
+		public CarsInventoryDBContext(DbContextOptions options) : base(options)
 		{
 
 		}

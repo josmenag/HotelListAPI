@@ -3,19 +3,16 @@ using System;
 using HotelListingAPI.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace HotelListingAPI.Migrations
+namespace CarsInventoryAPI.Migrations
 {
-    [DbContext(typeof(HotelListingDBContext))]
-    [Migration("20230410155447_InitialMigration")]
-    partial class InitialMigration
+    [DbContext(typeof(CarsInventoryDBContext))]
+    partial class CarsInventoryDBContextModelSnapshot : ModelSnapshot
     {
-        /// <inheritdoc />
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.4");
@@ -216,13 +213,13 @@ namespace HotelListingAPI.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "4f5c9f94-d671-4efe-b3ad-2f77f1fd32c8",
+                            Id = "543be195-5b4b-40c6-bc5e-b5e33f46d108",
                             Name = "Administrator",
                             NormalizedName = "ADMINISTRATOR"
                         },
                         new
                         {
-                            Id = "53c85287-a111-47b5-af51-5a42199e39fe",
+                            Id = "65c2a2b6-7157-4d5c-ae5b-21bc4dce8705",
                             Name = "User",
                             NormalizedName = "USER"
                         });

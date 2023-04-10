@@ -6,7 +6,7 @@ namespace HotelListingAPI.Repository
 {
 	public class CarsRepository : GenericRepository<Car>, ICarsRepository
 	{
-		public CarsRepository(HotelListingDBContext contex) : base(contex)
+		public CarsRepository(CarsInventoryDBContext contex) : base(contex)
 		{
 		}
 	}

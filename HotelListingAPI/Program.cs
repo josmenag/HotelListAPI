@@ -15,12 +15,12 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 
-var connectionString = new SqliteConnection($"Data Source=C:\\hotellistdb\\hotellist.db");
-builder.Services.AddDbContext<HotelListingDBContext>(o => o.UseSqlite(connectionString));
+var connectionString = new SqliteConnection($"Data Source=carsInventory.db");
+builder.Services.AddDbContext<CarsInventoryDBContext>(o => o.UseSqlite(connectionString));
 
 builder.Services.AddIdentityCore<ApiUser>()
     .AddRoles<IdentityRole>()
-    .AddEntityFrameworkStores<HotelListingDBContext>();
+    .AddEntityFrameworkStores<CarsInventoryDBContext>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

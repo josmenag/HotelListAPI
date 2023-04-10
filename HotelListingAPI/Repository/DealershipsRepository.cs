@@ -7,9 +7,9 @@ namespace HotelListingAPI.Repository
 {
 	public class DealershipsRepository : GenericRepository<Dealership>, IDealershipsRepository
     {
-        private readonly HotelListingDBContext _context;
+        private readonly CarsInventoryDBContext _context;
 
-        public DealershipsRepository(HotelListingDBContext context) : base(context)
+        public DealershipsRepository(CarsInventoryDBContext context) : base(context)
 		{
             this._context = context;
 		}

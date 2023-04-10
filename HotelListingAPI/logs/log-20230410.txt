@@ -75,3 +75,9 @@
 2023-04-10 11:51:08.012 -06:00 [INF] Content root path: /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI
 2023-04-10 11:51:27.802 -06:00 [INF] HTTP POST /api/Account/login responded 401 in 1492.8112 ms
 2023-04-10 11:51:37.604 -06:00 [INF] HTTP GET /api/Cars responded 200 in 117.4470 ms
+2023-04-10 12:28:16.599 -06:00 [INF] Now listening on: https://localhost:7011
+2023-04-10 12:28:16.636 -06:00 [INF] Now listening on: http://localhost:5256
+2023-04-10 12:28:16.638 -06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-10 12:28:16.638 -06:00 [INF] Hosting environment: Development
+2023-04-10 12:28:16.638 -06:00 [INF] Content root path: /Users/jose.mendez/Projects/HotelListingAPI/HotelListingAPI
+2023-04-10 12:28:30.354 -06:00 [INF] HTTP GET /api/Cars responded 200 in 1462.2112 ms
